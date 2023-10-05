@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Java_code {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int num= sc.nextInt();
+        int flag=1;
+        while(num>0){
+            flag=flag*num;
+            num=num-1;
+        }System.out.println(flag);
+
+
+    }
+}
