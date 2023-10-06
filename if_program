@@ -1,0 +1,90 @@
+/*maximum between two number*/
+import java.util.*;
+import java.lang.Math;
+public class Java_code{
+    public static void main(String args[]) {
+        Scanner sc =new Scanner(System.in);
+        int num1=sc.nextInt();
+        int num2=sc.nextInt();
+        if(num1>num2)
+            System.out.println("num1 is maximum");
+        else 
+            System.out.println("num2 is maximum");
+        }
+    }
+
+/*maximum between three num*/
+import java.util.*;
+public class Java_code{
+    public static void main(String args[]) {
+        Scanner sc =new Scanner(System.in);
+        int num1=sc.nextInt();
+        int num2=sc.nextInt();
+        int num3=sc.nextInt();
+        if(num1>num2 && num1>num3)
+            System.out.println("num1 is maximum");
+        else if(num2>num3)
+            System.out.println("num2 is maximum");
+        else
+                System.out.println("num3 is maximum");
+        }
+    }
+/*check a number is negetive,positive or zero*/
+
+import java.util.*;
+public class Java_code{
+    public static void main(String args[]) {
+        Scanner sc =new Scanner(System.in);
+        int num=sc.nextInt();
+        if(num>0)
+            System.out.println("num is positive");
+        else if(num<0)
+            System.out.println("num is negative");
+
+        else
+            System.out.println("num is zero");
+        }
+    }
+
+/ a number is divisible by 5 and 11 or not*/
+
+import java.util.*;
+public class Java_code{
+    public static void main(String args[]) {
+        Scanner sc =new Scanner(System.in);
+        int num=sc.nextInt();
+        if(num%5==0 && num%11==0)
+            System.out.println("num is divisible by 5 and 11 both");
+
+        else
+            System.out.println("num is not divisible by both 5 and 11");
+        }
+    }
+/*a year is leap year or not*/
+
+import java.util.*;
+public class Java_code{
+    public static void main(String args[]) {
+        Scanner sc =new Scanner(System.in);
+        int year=sc.nextInt();
+        if(year%4==0 && year%100!=0 ||year%400==0)
+            System.out.println("year is leap year");
+        else
+            System.out.println("year is not leap year");
+        }
+    }
+/*character is alphabet or not*/
+import java.util.*;
+public class Java_code{
+    public static void main(String args[]) {
+        Scanner sc =new Scanner(System.in);
+        char chr=sc.next().charAt(0);
+        if((chr>=65 && chr<=90)||(chr>=97 && chr<=122))
+            System.out.println("given chracter is alphabet");
+        else if(chr>=0 && chr<=9)
+            System.out.println("given character is digit");
+        else
+            System.out.println("given char is symbol");
+        }
+    }
+
