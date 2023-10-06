@@ -1,0 +1,129 @@
+/*print jai gla*/
+
+public class Java_code{
+    public static void main(String args[]) {
+        System.out.println("jai gla");
+        }}
+/*sum of two num*/
+
+import java.util.*;
+public class Java_code{
+    public static void main(String args[]) {
+        Scanner sc =new Scanner(System.in);
+        int num1=sc.nextInt();
+        int num2=sc.nextInt();
+        int sum=num1+num2;
+        System.out.println("the sum of two number is "+sum);
+
+
+
+        }
+    }
+/*check a number is even or odd*/
+
+import java.util.*;
+public class Java_code{
+    public static void main(String args[]) {
+        Scanner sc =new Scanner(System.in);
+        int num1=sc.nextInt();
+        if(num1%2==0)
+            System.out.println("given number is even");
+        else
+            System.out.println("given number is odd ");
+
+
+
+        }
+    }
+
+    /*to find greater number using ternary operator */
+
+    
+import java.util.*;
+public class Java_code{
+    public static void main(String args[]) {
+        Scanner sc =new Scanner(System.in);
+        int num1=sc.nextInt();
+        int num2=sc.nextInt();
+        int greatest=(num1>num2)? num1:num2;
+        System.out.println("the greater number is "+greatest);
+
+
+
+        }
+    }
+/*a number is divisible by 3 and 5 or not*/ 
+
+import java.util.*;
+public class Java_code{
+    public static void main(String args[]) {
+        Scanner sc =new Scanner(System.in);
+        int num=sc.nextInt();
+        if(num%3==0 && num%5==0)
+            System.out.println("the num is divisible by both 3 and 5");
+        else
+            System.out.println("the num is not divisible by both");
+
+
+
+        }
+    }
+
+/*area of circle,rectangle*/
+
+import java.util.*;
+public class Java_code{
+    public static void main(String args[]) {
+        Scanner sc =new Scanner(System.in);
+        int radius=sc.nextInt();
+        int length=sc.nextInt();
+        int breadth=sc.nextInt();
+        double area_circle= 3.14*(radius*radius);
+        double area_rectangle=length*breadth;
+        System.out.println("area of circle is "+ area_circle);
+        System.out.println("area of rectangle is "+area_rectangle);
+
+
+
+        }
+    }
+
+
+/* find simple interest*/
+
+import java.util.*;
+public class Java_code{
+    public static void main(String args[]) {
+        Scanner sc =new Scanner(System.in);
+        float principal=sc.nextFloat();
+        float time=sc.nextFloat();
+        float rate=sc.nextFloat();
+        double simple_interest=(principal*time*rate)/100;
+        System.out.println("the simple interest is "+simple_interest);
+
+
+
+
+
+        }
+    }
+/* find compound interest*/
+
+import java.util.*;
+import java.lang.Math;
+public class Java_code{
+    public static void main(String args[]) {
+        Scanner sc =new Scanner(System.in);
+        float principal=sc.nextFloat();
+        float time=sc.nextFloat();
+        float rate=sc.nextFloat();
+        int no_of_time=sc.nextInt();
+        double amount= principal*Math.pow(1+(rate/no_of_time),no_of_time*time);
+        System.out.println("the compound interest is "+amount);
+
+
+
+
+
+        }
+    }
