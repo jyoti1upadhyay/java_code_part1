@@ -1,0 +1,174 @@
+/* print day name using switch case*/
+
+import java.util.*;
+public class Java_code{
+    public static void main(String args[]) {
+        Scanner sc =new Scanner(System.in);
+        int week_num=sc.nextInt();
+        switch(week_num){
+            case 1:
+                System.out.println("monday");
+                break;
+            case 2:
+                System.out.println("tuesday");
+                break;
+            case 3:
+                System.out.println("wednesday");
+                break;
+            case 4:
+                System.out.println("thursday");
+                break;
+            case 5:
+                System.out.println("friday");
+                break;
+            case 6:
+                System.out.println("saturday");
+                break;
+            case 7:
+                System.out.println("sunday");
+            default :
+                System.out.println("input number between 1 to 7 only");
+                break;
+        }
+
+    }
+}
+
+
+/*total number of days in a month using switch case*/
+
+import java.util.*;
+public class Java_code{
+    public static void main(String args[]) {
+        Scanner sc =new Scanner(System.in);
+        System.out.println("press 1 for jan,mar,may,jul,aug,oct,dec" +
+                "press 2 for apr,june,sep,nov" +
+                "press 3 for feb");
+        int week_num=sc.nextInt();
+        switch(week_num){
+            case 1:
+                System.out.println("this month contain 31 days ");
+                break;
+            case 2:
+                System.out.println("this month contain 30 days ");
+                break;
+            case 3:
+                System.out.println("this month contain 28 days ");
+            default :
+                System.out.println("input number between 1 to 12 only");
+                break;
+        }
+
+    }
+}
+
+/*check wheather a character is vowel or consonants using switch case*/
+
+import java.util.*;
+public class Java_code{
+    public static void main(String args[]) {
+        Scanner sc =new Scanner(System.in);
+        char ch=sc.next().charAt(0);
+        ch=Character.toLowerCase(ch);
+        switch(ch){
+            case 'a':
+                System.out.println("vowel");
+                break;
+            case 'e':
+                System.out.println("vowel");
+                break;
+            case 'i':
+                System.out.println("vowel");
+            case 'o':
+                System.out.println("vowel");
+            case 'u':
+                System.out.println("vowel");
+            default :
+                System.out.println("consonant");
+                break;
+        }
+
+    }
+}
+/* check even or odd using switch case */
+import java.util.*;
+public class Java_code{
+    public static void main(String args[]) {
+        Scanner sc =new Scanner(System.in);
+        int num=sc.nextInt();
+        switch(num%2){
+            case 0:
+                System.out.println("the number is even ");
+                break;
+            case 1:
+                System.out.println("the number is odd");
+                break;
+            default :
+                System.out.println("try again :)");
+                break;
+        }
+
+    }
+}
+
+/*check positive ,negative and zero using switch case*/
+
+import java.util.*;
+public class Java_code{
+    public static void main(String args[]) {
+        Scanner sc =new Scanner(System.in);
+        int num=sc.nextInt();
+        int numb=(num>0)?1:((num<0)?2:3);
+        switch(numb){
+            case 1:
+                System.out.println("the number is positive ");
+                break;
+            case 2:
+                System.out.println("the number is negative");
+                break;
+            case 3:
+                System.out.println("the number is zero");
+                break;
+            default:
+                System.out.println("try again :)");
+                break;
+        }
+
+    }
+}
+
+/*create calculator using swicth case */
+
+import java.util.*;
+public class Java_code{
+    public static void main(String args[]) {
+        Scanner sc =new Scanner(System.in);
+        System.out.println("press 1 for addition,press 2 for subtraction,press 3 for multiplication " +
+                "press 4 for division ");
+        int press=sc.nextInt();
+        int num1=sc.nextInt();
+        int num2=sc.nextInt();
+        switch(press){
+            case 1:
+                int result=num1+num2;
+                System.out.println("the addition is "+result);
+                break;
+            case 2:
+                int result1=num1-num2;
+                System.out.println("the subtraction is"+result1);
+                break;
+            case 3:
+                int result2=num1*num2;
+                System.out.println("the multiplication is"+result2);
+                break;
+            case 4:
+                int result3=num1%num2;
+                System.out.println("the division is "+result3);
+            default:
+                System.out.println("try again :)");
+                break;
+        }
+
+    }
+}
+
